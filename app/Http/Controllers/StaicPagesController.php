@@ -20,6 +20,6 @@ class StaicPagesController extends Controller
     public function about()
     {
         # code...
-        return view('staic_pages/about');
+        return view('staic_pages.about');
     }
 }
