@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'StaicPagesController@home');
+Route::get('/help', 'StaicPagesController@help');
+Route::get('/about', 'StaicPagesController@about');
