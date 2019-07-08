@@ -4,8 +4,82 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7057007c8063656dbc77304eb0bff667",
+    "content-hash": "85756b2ee1f7012121ce11890cab9d6d",
     "packages": [
+        {
+            "name": "barryvdh/laravel-debugbar",
+            "version": "v3.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barryvdh/laravel-debugbar.git",
+                "reference": "2d195779ea4f809f69764a795e2ec371dbb76a96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/2d195779ea4f809f69764a795e2ec371dbb76a96",
+                "reference": "2d195779ea4f809f69764a795e2ec371dbb76a96",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "illuminate/routing": "5.5.x|5.6.x|5.7.x|5.8.x",
+                "illuminate/session": "5.5.x|5.6.x|5.7.x|5.8.x",
+                "illuminate/support": "5.5.x|5.6.x|5.7.x|5.8.x",
+                "maximebf/debugbar": "~1.15.0",
+                "php": ">=7.0",
+                "symfony/debug": "^3|^4",
+                "symfony/finder": "^3|^4"
+            },
+            "require-dev": {
+                "laravel/framework": "5.5.x"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Barryvdh\\Debugbar\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Debugbar": "Barryvdh\\Debugbar\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Barryvdh\\Debugbar\\": "src/"
+                },
+                "files": [
+                    "src/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "PHP Debugbar integration for Laravel",
+            "keywords": [
+                "debug",
+                "debugbar",
+                "laravel",
+                "profiler",
+                "webprofiler"
+            ],
+            "time": "2019-03-25T09:39:08+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
@@ -830,6 +904,73 @@
                 "storage"
             ],
             "time": "2019-06-18T20:09:29+00:00"
+        },
+        {
+            "name": "maximebf/debugbar",
+            "version": "v1.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maximebf/php-debugbar.git",
+                "reference": "30e7d60937ee5f1320975ca9bc7bcdd44d500f07"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/30e7d60937ee5f1320975ca9bc7bcdd44d500f07",
+                "reference": "30e7d60937ee5f1320975ca9bc7bcdd44d500f07",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": "^1.0",
+                "symfony/var-dumper": "^2.6|^3.0|^4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0|^5.0"
+            },
+            "suggest": {
+                "kriswallsmith/assetic": "The best way to manage assets",
+                "monolog/monolog": "Log using Monolog",
+                "predis/predis": "Redis storage"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.14-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DebugBar\\": "src/DebugBar/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Maxime Bouroumeau-Fuseau",
+                    "email": "maxime.bouroumeau@gmail.com",
+                    "homepage": "http://maximebf.com"
+                },
+                {
+                    "name": "Barry vd. Heuvel",
+                    "email": "barryvdh@gmail.com"
+                }
+            ],
+            "description": "Debug bar in the browser for php application",
+            "homepage": "https://github.com/maximebf/php-debugbar",
+            "keywords": [
+                "debug",
+                "debugbar"
+            ],
+            "time": "2017-12-15T11:13:46+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -3160,80 +3301,6 @@
     ],
     "packages-dev": [
         {
-            "name": "barryvdh/laravel-debugbar",
-            "version": "v3.2.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "2d195779ea4f809f69764a795e2ec371dbb76a96"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/2d195779ea4f809f69764a795e2ec371dbb76a96",
-                "reference": "2d195779ea4f809f69764a795e2ec371dbb76a96",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "illuminate/routing": "5.5.x|5.6.x|5.7.x|5.8.x",
-                "illuminate/session": "5.5.x|5.6.x|5.7.x|5.8.x",
-                "illuminate/support": "5.5.x|5.6.x|5.7.x|5.8.x",
-                "maximebf/debugbar": "~1.15.0",
-                "php": ">=7.0",
-                "symfony/debug": "^3|^4",
-                "symfony/finder": "^3|^4"
-            },
-            "require-dev": {
-                "laravel/framework": "5.5.x"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.2-dev"
-                },
-                "laravel": {
-                    "providers": [
-                        "Barryvdh\\Debugbar\\ServiceProvider"
-                    ],
-                    "aliases": {
-                        "Debugbar": "Barryvdh\\Debugbar\\Facade"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Barryvdh\\Debugbar\\": "src/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Barry vd. Heuvel",
-                    "email": "barryvdh@gmail.com"
-                }
-            ],
-            "description": "PHP Debugbar integration for Laravel",
-            "keywords": [
-                "debug",
-                "debugbar",
-                "laravel",
-                "profiler",
-                "webprofiler"
-            ],
-            "time": "2019-03-25T09:39:08+00:00"
-        },
-        {
             "name": "beyondcode/laravel-dump-server",
             "version": "1.2.2",
             "source": {
@@ -3248,7 +3315,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -3315,7 +3382,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -3377,7 +3444,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -3444,7 +3511,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -3500,7 +3567,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -3540,73 +3607,6 @@
             "time": "2016-01-20T08:20:44+00:00"
         },
         {
-            "name": "maximebf/debugbar",
-            "version": "v1.15.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/maximebf/php-debugbar.git",
-                "reference": "30e7d60937ee5f1320975ca9bc7bcdd44d500f07"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/maximebf/php-debugbar/zipball/30e7d60937ee5f1320975ca9bc7bcdd44d500f07",
-                "reference": "30e7d60937ee5f1320975ca9bc7bcdd44d500f07",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": ">=5.3.0",
-                "psr/log": "^1.0",
-                "symfony/var-dumper": "^2.6|^3.0|^4.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.0|^5.0"
-            },
-            "suggest": {
-                "kriswallsmith/assetic": "The best way to manage assets",
-                "monolog/monolog": "Log using Monolog",
-                "predis/predis": "Redis storage"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.14-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "DebugBar\\": "src/DebugBar/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Maxime Bouroumeau-Fuseau",
-                    "email": "maxime.bouroumeau@gmail.com",
-                    "homepage": "http://maximebf.com"
-                },
-                {
-                    "name": "Barry vd. Heuvel",
-                    "email": "barryvdh@gmail.com"
-                }
-            ],
-            "description": "Debug bar in the browser for php application",
-            "homepage": "https://github.com/maximebf/php-debugbar",
-            "keywords": [
-                "debug",
-                "debugbar"
-            ],
-            "time": "2017-12-15T11:13:46+00:00"
-        },
-        {
             "name": "mockery/mockery",
             "version": "1.2.2",
             "source": {
@@ -3621,7 +3621,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -3692,7 +3692,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -3746,7 +3746,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -3816,7 +3816,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -3877,7 +3877,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -3930,7 +3930,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -3990,7 +3990,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -4047,7 +4047,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -4100,7 +4100,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -4169,7 +4169,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -4238,7 +4238,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -4294,7 +4294,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -4341,7 +4341,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -4396,7 +4396,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -4451,7 +4451,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -4541,7 +4541,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -4592,7 +4592,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -4662,7 +4662,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -4724,7 +4724,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -4783,7 +4783,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -4856,7 +4856,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -4913,7 +4913,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -4966,7 +4966,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5017,7 +5017,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5076,7 +5076,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5124,7 +5124,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5173,7 +5173,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
@@ -5219,7 +5219,7 @@
                 "shasum": "",
                 "mirrors": [
                     {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
                         "preferred": true
                     }
                 ]
