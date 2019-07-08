@@ -16,3 +16,4 @@ Route::get('/help', 'StaicPagesController@help')->name('help');
 Route::get('/about', 'StaicPagesController@about')->name('about');
 
 Route::get('signup','UsersController@create')->name('signup');
+Route::resource('users','UsersController');
