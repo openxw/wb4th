@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="611abfcd-5a47-4a0f-9d35-61c3b1e342d4" name="默认更改列表" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SessionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SessionsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/sessions/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sessions/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/temp/temp.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/temp/temp.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,14 +42,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SessionsController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SessionsController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SessionsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="639">
-              <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            <state relative-caret-position="642">
+              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helpers.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="temp.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/temp/temp.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="897">
+              <caret line="82" column="2" selection-start-line="82" selection-start-column="2" selection-end-line="82" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -88,6 +107,7 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/sessions/create.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/SessionsController.php" />
+        <option value="$PROJECT_DIR$/temp/temp.blade.php" />
       </list>
     </option>
   </component>
@@ -216,6 +236,16 @@
             <path>
               <item name="wb4th" type="b2602c69:ProjectViewProjectNode" />
               <item name="wb4th" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wb4th" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wb4th" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wb4th" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wb4th" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -227,28 +257,7 @@
             <path>
               <item name="wb4th" type="b2602c69:ProjectViewProjectNode" />
               <item name="wb4th" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wb4th" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wb4th" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="sessions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wb4th" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wb4th" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="temp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wb4th" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wb4th" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -258,12 +267,17 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="usersc&#9;null&#9;null&#10;sess&#9;FILE&#9;file:///Users/alan/Code/wb4th/app/Http/Controllers/SessionsController.php&#10;package&#9;FILE&#9;file:///Users/alan/Code/wb4th/package.json&#10;boots&#9;FILE&#9;file:///Users/alan/Code/wb4th/resources/js/bootstrap.js&#10;rjb&#9;null&#9;null&#10;def&#9;FILE&#9;file:///Users/alan/Code/wb4th/resources/views/layouts/default.blade.php&#10;app.js&#9;FILE&#9;file:///Users/alan/Code/wb4th/resources/js/app.js&#10;_header.b&#9;FILE&#9;file:///Users/alan/Code/wb4th/resources/views/layouts/_header.blade.php&#10;create.b&#9;FILE&#9;file:///Users/alan/Code/wb4th/resources/views/sessions/create.blade.php" />
+    <property name="SearchEverywhereHistoryKey" value="helper.&#9;FILE&#9;file:///Users/alan/Code/wb4th/app/helpers.php&#10;usersc&#9;null&#9;null&#10;sess&#9;FILE&#9;file:///Users/alan/Code/wb4th/app/Http/Controllers/SessionsController.php&#10;package&#9;FILE&#9;file:///Users/alan/Code/wb4th/package.json&#10;boots&#9;FILE&#9;file:///Users/alan/Code/wb4th/resources/js/bootstrap.js&#10;rjb&#9;null&#9;null&#10;def&#9;FILE&#9;file:///Users/alan/Code/wb4th/resources/views/layouts/default.blade.php&#10;app.js&#9;FILE&#9;file:///Users/alan/Code/wb4th/resources/js/app.js&#10;_header.b&#9;FILE&#9;file:///Users/alan/Code/wb4th/resources/views/layouts/_header.blade.php&#10;create.b&#9;FILE&#9;file:///Users/alan/Code/wb4th/resources/views/sessions/create.blade.php" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -287,12 +301,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562889016957</updated>
-      <workItem from="1562889019495" duration="6489000" />
+      <workItem from="1562889019495" duration="7311000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6489000" />
+    <option name="totallyTimeSpent" value="7311000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -305,7 +319,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32981783" />
       <window_info anchor="bottom" id="调试" />
@@ -347,13 +360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/temp/temp.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -421,11 +427,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SessionsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="639">
-          <caret line="33" column="24" lean-forward="true" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+        <state relative-caret-position="642">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/temp.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="897">
+          <caret line="82" column="2" selection-start-line="82" selection-start-column="2" selection-end-line="82" selection-end-column="2" />
         </state>
       </provider>
     </entry>
