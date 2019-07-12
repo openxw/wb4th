@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Str;
 
-'default' => $db_config['connection'],
+$db_config = get_db_config();
 
 return [
 
