@@ -2,9 +2,11 @@
 
 namespace App\Models;
 
+use function foo\func;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Str;
 
 class User extends Authenticatable
 {
@@ -33,6 +35,17 @@ class User extends Authenticatable
      *
      * @var array
      */
+
+    public static function boot()
+    {
+        parent::boot();
+
+        static::creating(function ($user){
+            $user->activation_token = Str::random(10);
+        });
+    }
+
+
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
